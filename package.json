@@ -1,0 +1,27 @@
+{
+  "name": "fetch-contribution-calendar",
+  "version": "1.0.0",
+  "description": "a package to retrieve the github calendar of a user as an array of objects containing the date, contribution count and contribution level",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SVRourke/fetch-contribution-calendar.git"
+  },
+  "keywords": [
+    "github",
+    "contributions"
+  ],
+  "author": "SVRourke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SVRourke/fetch-contribution-calendar/issues"
+  },
+  "homepage": "https://github.com/SVRourke/fetch-contribution-calendar#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.9"
+  }
+}
