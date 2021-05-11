@@ -22,4 +22,3 @@ const fetchContributions = async (userName) => {
 }
 
 module.exports.fetchContributions = fetchContributions;
-// fetchContributions('SVRourke').then(d => console.log(d[0]))
