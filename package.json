@@ -1,6 +1,6 @@
 {
   "name": "fetch-contribution-calendar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a package to retrieve the github calendar of a user as an array of objects containing the date, contribution count and contribution level",
   "main": "index.js",
   "scripts": {
