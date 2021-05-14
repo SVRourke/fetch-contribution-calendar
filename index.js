@@ -13,11 +13,11 @@ const parseContribs = (contribs) => {
 }
 
 const fetchContributions = async (userName) => {
-  const response = await axios.get(`https://github.com/users/${userName}/contributions`)
-  const data = await response.data
-  const $ = await cheerio.load(data)
-  const scraped = await $('rect.ContributionCalendar-day')
-  return parseContribs(scraped.slice(0, -5))
+  const response = await fetch(`https://api.allorigins.win/raw?url=https://github.com/users/${userName}/contributions`, {method: 'GET'})
+  const text = await response.text()
+  const data = await cheerio.load(text)
+  const rects = await data('rect.ContributionCalendar-day')
+  return parseContribs(rects).slice(0, -5)
 }
 
-module.exports.fetchContributions = fetchContributions;
+export { fetchContributions }
